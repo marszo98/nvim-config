@@ -17,6 +17,7 @@ return {
   config = function()
     vim.lsp.enable('clangd')
     vim.lsp.enable('lua_ls')
+    vim.lsp.enable('marksman')
 
     local capabilities = require('blink.cmp').get_lsp_capabilities()
     vim.lsp.config('*', { capabilities = capabilities })
